@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NewViewController.swift
 //  A252AccessControl
 //
 //  Created by 申潤五 on 2025/4/20.
@@ -7,18 +7,11 @@
 
 import UIKit
 
-private struct Food{
-    var name:String
-}
-
-
-class ViewController: UIViewController {
+class NewViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let a = Food(name: "a")
+
+        let f = Food(name: "b")
     }
-
-
 }
-
