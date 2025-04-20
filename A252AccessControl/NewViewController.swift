@@ -12,6 +12,6 @@ class NewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let f = Food(name: "b")
+        let a = Food(name: "hello", privateName: "hello")
     }
 }
