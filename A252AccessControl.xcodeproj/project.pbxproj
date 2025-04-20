@@ -6,9 +6,39 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BAE4900A2DB498BC00737C48 /* MySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE490022DB498BC00737C48 /* MySDK.framework */; };
+		BAE4900B2DB498BC00737C48 /* MySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BAE490022DB498BC00737C48 /* MySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAE490082DB498BC00737C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAE48FBD2DB491B200737C48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAE490012DB498BC00737C48;
+			remoteInfo = MySDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BAE4900F2DB498BC00737C48 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BAE4900B2DB498BC00737C48 /* MySDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BAE48FC52DB491B200737C48 /* A252AccessControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A252AccessControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE48FE52DB494E100737C48 /* ManagerAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManagerAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAE490022DB498BC00737C48 /* MySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -54,6 +84,11 @@
 			path = ManagerAPP;
 			sourceTree = "<group>";
 		};
+		BAE490032DB498BC00737C48 /* MySDK */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MySDK;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +96,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAE4900A2DB498BC00737C48 /* MySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BAE48FE22DB494E100737C48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE48FFF2DB498BC00737C48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +122,7 @@
 			children = (
 				BAE48FC72DB491B200737C48 /* A252AccessControl */,
 				BAE48FE62DB494E100737C48 /* ManagerAPP */,
+				BAE490032DB498BC00737C48 /* MySDK */,
 				BAE48FC62DB491B200737C48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,11 +132,22 @@
 			children = (
 				BAE48FC52DB491B200737C48 /* A252AccessControl.app */,
 				BAE48FE52DB494E100737C48 /* ManagerAPP.app */,
+				BAE490022DB498BC00737C48 /* MySDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BAE48FFD2DB498BC00737C48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BAE48FC42DB491B200737C48 /* A252AccessControl */ = {
@@ -102,10 +157,12 @@
 				BAE48FC12DB491B200737C48 /* Sources */,
 				BAE48FC22DB491B200737C48 /* Frameworks */,
 				BAE48FC32DB491B200737C48 /* Resources */,
+				BAE4900F2DB498BC00737C48 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BAE490092DB498BC00737C48 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				BAE48FC72DB491B200737C48 /* A252AccessControl */,
@@ -139,6 +196,29 @@
 			productReference = BAE48FE52DB494E100737C48 /* ManagerAPP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BAE490012DB498BC00737C48 /* MySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE4900C2DB498BC00737C48 /* Build configuration list for PBXNativeTarget "MySDK" */;
+			buildPhases = (
+				BAE48FFD2DB498BC00737C48 /* Headers */,
+				BAE48FFE2DB498BC00737C48 /* Sources */,
+				BAE48FFF2DB498BC00737C48 /* Frameworks */,
+				BAE490002DB498BC00737C48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BAE490032DB498BC00737C48 /* MySDK */,
+			);
+			name = MySDK;
+			packageProductDependencies = (
+			);
+			productName = MySDK;
+			productReference = BAE490022DB498BC00737C48 /* MySDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,6 +233,9 @@
 						CreatedOnToolsVersion = 16.3;
 					};
 					BAE48FE42DB494E100737C48 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					BAE490012DB498BC00737C48 = {
 						CreatedOnToolsVersion = 16.3;
 					};
 				};
@@ -173,6 +256,7 @@
 			targets = (
 				BAE48FC42DB491B200737C48 /* A252AccessControl */,
 				BAE48FE42DB494E100737C48 /* ManagerAPP */,
+				BAE490012DB498BC00737C48 /* MySDK */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +270,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BAE48FE32DB494E100737C48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAE490002DB498BC00737C48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,7 +300,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BAE48FFE2DB498BC00737C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAE490092DB498BC00737C48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAE490012DB498BC00737C48 /* MySDK */;
+			targetProxy = BAE490082DB498BC00737C48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BAE48FD92DB491B300737C48 /* Debug */ = {
@@ -445,6 +551,76 @@
 			};
 			name = Release;
 		};
+		BAE4900D2DB498BC00737C48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XSVW22JPST;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.MySDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BAE4900E2DB498BC00737C48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XSVW22JPST;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = idv.sjw.MySDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +647,15 @@
 			buildConfigurations = (
 				BAE48FF82DB494E200737C48 /* Debug */,
 				BAE48FF92DB494E200737C48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE4900C2DB498BC00737C48 /* Build configuration list for PBXNativeTarget "MySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE4900D2DB498BC00737C48 /* Debug */,
+				BAE4900E2DB498BC00737C48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,23 +6,7 @@
 //
 
 import UIKit
-
-internal struct Food{
-    var name: String
-    private var privateName: String = "private"
-    fileprivate var fileprivateName: String = "fileprivate"
-    init(name: String, privateName: String = "private", fileprivateName: String  = "fileprivate") {
-        self.name = name
-        self.privateName = privateName
-        self.fileprivateName = fileprivateName
-    }
-}
-extension Food{
-    fileprivate func printPrivate(){
-        print(self.privateName)
-    }
-}
-
+import MySDK
 
 
 class ViewController: UIViewController {

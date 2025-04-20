@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import MySDK
+
 
 class NewViewController: UIViewController {
+    
+    var a:Food!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let a = Food(name: "hello", privateName: "hello")
+        a = Food(name: "hello", privateName: "hello")
     }
 }
